@@ -1,80 +1,77 @@
-# Variable declaration and assignment
-name = "John"
-age = 25
-is_student = True
+#Definición de variables
+name = "John"  # Nombre del individuo
+age = 25  # Edad del individuo
+is_student = True  # Indicador de si es estudiante o no
 
-# Math operations
+#Operaciones matemáticas
 a = 10
 b = 5
 
-# Addition
+#Suma
 result_add = a + b
-print("Addition:", result_add)  # Output: 15
+print("Addition:", result_add)  # Salida: 15
 
-# Subtraction
+#Resta
 result_sub = a - b
-print("Subtraction:", result_sub)  # Output: 5
+print("Subtraction:", result_sub)  # Salida: 5
 
-# Multiplication
+#Multiplicación
 result_mul = a * b
-print("Multiplication:", result_mul)  # Output: 50
+print("Multiplication:", result_mul)  # Salida: 50
 
-# Division
+#División
 try:
     result_div = a / b
-    print("Division:", result_div)  # Output: 2.0
+    print("Division:", result_div)  # Salida: 2.0
 except ZeroDivisionError:
-    print("Error: Division by zero is not allowed.")
+    print("Error: División por cero no permitida.")
 
-# Arrays (lists)
+#Arreglos (listas)
 fruits = ["apple", "banana", "orange"]
-print("Fruits:", fruits)
+print("Fruits:", fruits)  # Salida: ["apple", "banana", "orange"]
 
-# Dictionaries (key-value pairs)
+#Diccionarios (pares clave-valor)
 person = {"name": "John", "age": 25, "is_student": True}
-print("Person:", person)
+print("Person:", person)  # Salida: {"name": "John", "age": 25, "is_student": True}
 
-# Operations in arrays
-fruits.append("grape")
-print("Updated Fruits:", fruits)
+#Operaciones en arreglos
+fruits.append("grape")  # Agregar "grape" al arreglo
+print("Updated Fruits:", fruits)  # Salida: ["apple", "banana", "orange", "grape"]
 
-# Operations in dictionaries
-person["location"] = "New York"
-print("Updated Person:", person)
-
-# If statement
+#Operaciones en diccionarios
+person["location"] = "New York"  # Agregar una nueva clave-valor al diccionario
+print("Updated Person:", person)  # Salida: {"name": "John", "age": 25, "is_student": True, "location": "New York"} 
+#Declaración condicional (if)
 x = 10
 if x > 5:
-    print("x is greater than 5")
+    print("x is greater than 5")  # Salida si x > 5
 elif x == 5:
-    print("x is equal to 5")
+    print("x is equal to 5")  # Salida si x = 5
 else:
-    print("x is less than 5")
+    print("x is less than 5")  # Salida en otros casos
 
-# For each loop (using for loop)
+#Bucle "for each" (usando el bucle for)
 for fruit in fruits:
-    print(fruit)
+    print(fruit)  # Salida: "apple", "banana", "orange", "grape"
 
-# While loop
+
+#Bucle "while"
 count = 0
 while count < 5:
-    print("Count:", count)
+    print("Count:", count)  # Salida de los valores de 'count' mientras sea menor que 5
     count += 1
 
-# Opening a file using context manager
+#Apertura de un archivo usando un administrador de contexto
 filename = "example.txt"
 try:
     with open(filename, "r") as file:
         content = file.read()
-        print("File Content:", content)
+        print("File Content:", content)  # Mostrar el contenido del archivo
 except FileNotFoundError:
-    print(f"Error: File '{filename}' not found.")
+    print(f"Error: Archivo '{filename}' no encontrado.")
 
-# Print statements
-print("Name:", name, "Age:", age)
+#Declaraciones de impresión
+print("Name:", name, "Age:", age)  # Mostrar nombre y edad
 
-# String interpolation using f-strings (Python 3.6+)
-print(f"Name: {name}, Age: {age}")
-
-
-
+#interpolación de cadenas usando f-strings (Python 3.6+)
+print(f"Name: {name}, Age: {age}")  # Mostrar nombre y edad utilizando f-strings
